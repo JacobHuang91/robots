@@ -2,10 +2,10 @@
 
 export function GET() {
   const robotsTxt = `
-  User-agent: *
-  Disallow: /private/
-  Allow: /public/
-  `;
+User-agent: *
+Disallow: /private/
+Allow: /public/
+`;
 
   return new Response(robotsTxt.trim(), {
     headers: {
