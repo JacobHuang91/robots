@@ -3,8 +3,8 @@
 export function GET() {
   const robotsTxt = `
 User-agent: *
-Disallow: /private/
-Allow: /public/
+Disallow: /private
+Allow: /public
 `;
 
   return new Response(robotsTxt.trim(), {
