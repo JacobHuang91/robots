@@ -13,6 +13,16 @@ export function GET() {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://robots-topaz.vercel.app/public</loc>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://robots-topaz.vercel.app/private</loc>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>`;
 
   return new Response(sitemap.trim(), {
